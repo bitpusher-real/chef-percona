@@ -19,7 +19,7 @@ recipe "percona::access_grants", "Used internally to grant permissions for recip
 recipe "percona::monitoring", "Installs Percona monitoring plugins for Nagios"
 
 depends "apt", ">= 1.9"
-depends "yum", "~> 3.0"
+depends "yum"
 depends "openssl"
 
 supports "debian"
