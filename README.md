@@ -393,6 +393,7 @@ default["percona"]["server"]["replication"]["ignore_table"] = []
 default["percona"]["server"]["replication"]["ssl_enabled"] = false
 default["percona"]["server"]["replication"]["suppress_1592"] = false
 default["percona"]["server"]["replication"]["skip_slave_start"] = false
+default["percona"]["server"]["replication"]["slave_transaction_retries"] = 10
 
 # XtraBackup Settings
 default["percona"]["backup"]["configure"] = false
@@ -739,6 +740,7 @@ Many thanks go to the following [contributors](https://github.com/phlipper/chef-
     * only set `old_passwords` only when a value defined
 * **[@bitpusher-real](https://github.com/bitpusher-real)**
     * add `slave_load_tmpdir` attribute
+    * add `slave_transaction_retries` attribute
 
 
 ## License
